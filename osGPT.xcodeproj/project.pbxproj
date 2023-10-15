@@ -11,6 +11,7 @@
 		8D34FB7A2ADB3B6C007B3EB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34FB792ADB3B6C007B3EB5 /* ContentView.swift */; };
 		8D34FB7C2ADB3B6E007B3EB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D34FB7B2ADB3B6E007B3EB5 /* Assets.xcassets */; };
 		8D34FB7F2ADB3B6E007B3EB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D34FB7E2ADB3B6E007B3EB5 /* Preview Assets.xcassets */; };
+		8D34FB872ADB4659007B3EB5 /* AppChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34FB862ADB4659007B3EB5 /* AppChecker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		8D34FB7B2ADB3B6E007B3EB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D34FB7E2ADB3B6E007B3EB5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8D34FB802ADB3B6E007B3EB5 /* osGPT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = osGPT.entitlements; sourceTree = "<group>"; };
+		8D34FB862ADB4659007B3EB5 /* AppChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChecker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				8D34FB772ADB3B6C007B3EB5 /* osGPTApp.swift */,
 				8D34FB792ADB3B6C007B3EB5 /* ContentView.swift */,
+				8D34FB862ADB4659007B3EB5 /* AppChecker.swift */,
 				8D34FB7B2ADB3B6E007B3EB5 /* Assets.xcassets */,
 				8D34FB802ADB3B6E007B3EB5 /* osGPT.entitlements */,
 				8D34FB7D2ADB3B6E007B3EB5 /* Preview Content */,
@@ -141,6 +144,7 @@
 			files = (
 				8D34FB7A2ADB3B6C007B3EB5 /* ContentView.swift in Sources */,
 				8D34FB782ADB3B6C007B3EB5 /* osGPTApp.swift in Sources */,
+				8D34FB872ADB4659007B3EB5 /* AppChecker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +282,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to speech recognition to convert your speech to text.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -303,6 +308,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to speech recognition to convert your speech to text.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
